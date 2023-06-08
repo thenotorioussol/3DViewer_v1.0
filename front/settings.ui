@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Settings</class>
+ <widget class="QDialog" name="Settings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>350</width>
+    <height>470</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>350</width>
+    <height>470</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>350</width>
+    <height>470</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Settings</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(49, 47, 57);</string>
+  </property>
+  <widget class="QPushButton" name="ButtonEdgesColor">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>60</y>
+     <width>18</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(50, 80, 220);
+border: 1px solid;
+border-color: rgb(79, 79, 87);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="_vertices_size">
+   <property name="geometry">
+    <rect>
+     <x>75</x>
+     <y>220</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lato</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(49, 47, 57);
+color: rgb(221, 231, 220);</string>
+   </property>
+   <property name="text">
+    <string>Size</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="_edges_color">
+   <property name="geometry">
+    <rect>
+     <x>75</x>
+     <y>60</y>
+     <width>45</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lato</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(49, 47, 57);
+color: rgb(221, 231, 220);</string>
+   </property>
+   <property name="text">
+    <string>Color</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="_edges_thick">
+   <property name="geometry">
+    <rect>
+     <x>75</x>
+     <y>120</y>
+     <width>75</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lato</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(49, 47, 57);
+color: rgb(221, 231, 220);</string>
+   </property>
+   <property name="text">
+    <string>Thickness</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButtonBackgroundColor">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>350</y>
+     <width>18</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(49, 47, 57);
+border: 1px solid;
+border-color: rgb(79, 79, 87);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="SavePreferences">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>415</y>
+     <width>200</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lato</family>
+     <pointsize>14</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+ 	border-radius: 15px;
+	background-color: rgb(255, 255, 255);
+	color: rgb(49, 47, 57);
+}
+
+QPushButton::hover {
+ 	border-radius: 15px;
+	background-color: rgb(225, 225, 225);
+	color: rgb(49, 47, 57);
+}</string>
+   </property>
+   <property name="text">
+    <string>Save preferences</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="_edges">
+   <property name="geometry">
+    <rect>
+     <x>155</x>
+     <y>26</y>
+     <width>50</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lato</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(49, 47, 57);
+color: rgb(221, 231, 220);</string>
+   </property>
+   <property name="text">
+    <string>Edges</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="_type_of_projection">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>320</y>
+     <width>130</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lato</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(49, 47, 57);
+color: rgb(221, 231, 220);</string>
+   </property>
+   <property name="text">
+    <string>Type of projection</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="_background_color">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>350</y>
+     <width>130</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lato</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(49, 47, 57);
+color: rgb(221, 231, 220);</string>
+   </property>
+   <property name="text">
+    <string>Background color</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBoxEdgesThick">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>120</y>
+     <width>95</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(217, 217, 217);</string>
+   </property>
+   <property name="currentText">
+    <string>Medium</string>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>Extra thin</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Thin</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Medium</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bold</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Extra bold</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="_other">
+   <property name="geometry">
+    <rect>
+     <x>155</x>
+     <y>285</y>
+     <width>70</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lato</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(49, 47, 57);
+color: rgb(221, 231, 220);</string>
+   </property>
+   <property name="text">
+    <string>Other</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBoxVerticesSize">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>220</y>
+     <width>95</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(217, 217, 217);</string>
+   </property>
+   <property name="currentText">
+    <string>Medium</string>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>Tiny</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Small</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Medium</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Big</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Huge</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBoxProjection">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>320</y>
+     <width>75</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(217, 217, 217);</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Parallel</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Central</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBoxEdgesType">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>90</y>
+     <width>75</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(217, 217, 217);
+text-align: right;</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Solid</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Dashed</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="_vertices_color">
+   <property name="geometry">
+    <rect>
+     <x>75</x>
+     <y>190</y>
+     <width>45</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lato</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(49, 47, 57);
+color: rgb(221, 231, 220);</string>
+   </property>
+   <property name="text">
+    <string>Color</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBoxVerticesDispMethod">
+   <property name="geometry">
+    <rect>
+     <x>195</x>
+     <y>250</y>
+     <width>70</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(217, 217, 217);</string>
+   </property>
+   <property name="currentText">
+    <string>Circle</string>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>None</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Circle</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Square</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="ButtonVerticesColor">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>190</y>
+     <width>18</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(160, 35, 180);
+border: 1px solid;
+border-color: rgb(79, 79, 87);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="_vertices">
+   <property name="geometry">
+    <rect>
+     <x>148</x>
+     <y>155</y>
+     <width>70</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lato</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(49, 47, 57);
+color: rgb(221, 231, 220);</string>
+   </property>
+   <property name="text">
+    <string>Vertices</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="_vertices_method">
+   <property name="geometry">
+    <rect>
+     <x>75</x>
+     <y>250</y>
+     <width>120</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lato</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(49, 47, 57);
+color: rgb(221, 231, 220);</string>
+   </property>
+   <property name="text">
+    <string>Display method</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="_edges_type">
+   <property name="geometry">
+    <rect>
+     <x>75</x>
+     <y>90</y>
+     <width>45</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lato</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(49, 47, 57);
+color: rgb(221, 231, 220);</string>
+   </property>
+   <property name="text">
+    <string>Type</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
